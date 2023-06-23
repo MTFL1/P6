@@ -138,6 +138,8 @@ li:hover {
 	border-radius: 60px;
 	border:  #1D6154 solid 1px;
 	color: #1D6154;
+	font-family: 'Work Sans' ;
+	font-size: large;
 	background-color: white;
 }
 .filter-style-b:active, .filter-style-b:focus {
@@ -145,6 +147,10 @@ li:hover {
 	color: white;
 }
 
+.filter-style-b:hover{
+	background-color: #1D6154;
+	color: white;
+}
 .gallery {
 	width: 100%;
 	display: grid;
