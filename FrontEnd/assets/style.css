@@ -125,7 +125,7 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
-.filter-style{
+.filters-style{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 30px;
@@ -212,3 +212,206 @@ footer nav ul {
 	margin: 2em
 }
 
+/*** Page login ***/
+a {
+	display: flex;
+	color: black;
+}
+
+.no-underline  {
+	text-decoration: none;
+}
+
+
+.login-title {
+	margin-left: 200px;
+}
+.mdp {
+	margin-left: 500px;
+}
+
+.erreur-msg {
+	margin-left: 40px;
+	color: rgb(212, 37, 37);
+	font-weight: 600;
+}
+
+.active{
+	display: block;
+
+}
+#modifierBtn{
+	display: none;
+	  }
+	  /* Modal 1 */
+.modal {
+	display: none;
+	position: absolute;
+	width: 630px;
+	height: 731px;
+	top: 600px;
+	left: 390px;
+	border-radius: 10px;
+	background-color: #ffffff;
+
+  }
+  .modalElement{
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	flex-wrap: wrap;
+	height: 80%;
+	overflow:auto;
+	justify-content: flex-start;
+	margin-left: 90px;
+  }
+  .image-container {
+	width: 83px;
+	height: 140px;
+	
+
+}
+.modalElement img {
+	width: 75px;
+	height: 120px;
+
+}
+
+  .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background:none;
+	cursor: pointer;
+	color: grey;
+  	font-size: 28px;
+  	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+ 
+
+
+.galeriePhotoStyle{
+	margin-top: 40px;
+	margin-bottom: 36px;
+	font-weight: 500;
+	font-family: 'Work Sans';
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: black;
+}
+.trait-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 30px;
+
+}
+
+.trait {
+	display: flex;
+	width: 420px;
+	height: 0px;
+	border: 1px solid #B3B3B3;
+}
+.addpicture{
+	display: block;
+	background-color: #1D6154;
+	border-radius: 60px;
+	border: none;
+	color: white;
+	font-family: 'Syne';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	cursor: pointer;
+	height: 36px;
+	width: 237px;
+	border-radius: 60px;
+	margin-top: 30px;
+	margin-left: 200px;
+}
+.delete-gallery{
+	margin-top: 30px;
+	color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #D65353;
+	font-family: Syne;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.modifierProjectContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 300px;
+	height: 40px;
+	margin-left: 450px;
+	margin-bottom: 10px;
+}
+/* Banner + publier les changements */
+.banner {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	height: 50px;
+	width: 1440px;
+	margin-left: -150px;
+}
+.publish {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	height: 38px;
+	width: 216px;
+	border-radius: 60px;
+	margin-left: 20px;
+	margin-top: 6px;
+	border: none;
+}
+/* Mode edition top */
+.mode-edition-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.text-top {
+	cursor: pointer;
+	color: white;
+	border: none;
+	background-color: black;
+	font-family: 'Work Sans';
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 6px;
+
+}
+
+.logo-top {
+	height: 19px;
+	margin-right: 12px;
+	cursor: pointer;
+	margin-top: 6px;
+
+}

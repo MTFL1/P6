@@ -9,21 +9,30 @@
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
-	<script src="script.js" defer></script>
+	
 </head>
 <body>
+	
+	<div class="banner">
+		<div class="mode-edition-top">
+			<img class="logo-top" src="./assets/icons/edition-white.svg" alt="edition">
+			<div class="text-top">Mode édition</div>
+			<button type="submit" class="publish"> publiez les changements </button>
+		</div>
+	</div>
+
 <header>
 	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 	<nav>
 		<ul>
-			<li>projets</li>
-			<li>contact</li>
-			<li>login</li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			<li><a class="no-underline">projets</a></li>
+				<li><a class="no-underline" href="#contactMoov" >contact</a></li>
+				<li><a id="log" class="no-underline" href="login.html">login</a> </li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
 </header>
-<main>
+<main >
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
@@ -36,18 +45,25 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
-		<div id="filters" class="filter-style">
-			<button id="filter-tous" class="filter-style-b">Tous</button>
-			<button id="filter-objets" class="filter-style-b">Objets</button>
-			<button id="filter-appartements" class="filter-style-b">Appartements</button>
-			<button id="filter-hotels-restaurants" class="filter-style-b">Hotels et Restaurants</button>
-		  </div>
-		  
+		<div class="modifierProjectContainer">
+			<h2>Mes Projets</h2>
+		 <!-- <button id="btnModifier" class="btnModifier">modifier</button>-->
+		 <button id="modifierBtn" class="btnModifier">Modifier</button>
+		</div>
+		
+		 <!-- <button id="btnModifier" class="btnModifier">modifier</button>-->
+		 <button id="modifierBtn" class="btnModifier">Modifier</button>
+		 
+		<div id="filters" class="filters-style">
+		  <button id="filter-tous" class="filter-style-b">Tous</button>
+		  <button id="filter-objets" class="filter-style-b">Objets</button>
+		  <button id="filter-appartements" class="filter-style-b">Appartements</button>
+		  <button id="filter-hotels-restaurants" class="filter-style-b">Hotels et Restaurants</button>
+		</div>
 		<div class="gallery"></div>
-	</section>
+	  </section>
 	<section id="contact">
-		<h2>Contact</h2>
+		<h2  id="contactMoov">Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
 		<form action="#" method="post">
 			<label for="name">Nom</label>
@@ -68,5 +84,29 @@
 		</ul>
 	</nav>
 </footer>
+
+
+
+
+<div id="myModal" class="modal">
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <h3 class="galeriePhotoStyle">Galerie photo</h3>
+	  <div class="modalElement"></div>
+	  <div class="trait-container">
+		<div class="trait"></div>
+	  </div>
+	
+	<div class="containerAddPictureAnddelete">
+	  <button class="addpicture">Ajouter une photo</button>
+	  <p class="delete-gallery">Supprimer la galerie</p>
+	</div>
+	</div>
+  </div>
+
+
 </body>
+<script src="script.js" defer></script>
+<script src="login.js" defer></script>
+<script src="modal.js" defer></script>
 </html>
