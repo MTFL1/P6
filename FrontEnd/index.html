@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Sophie Bluel - Architecte d'intérieur</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c687e36a1.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
@@ -12,10 +13,11 @@
 	
 </head>
 <body>
+<!-- BANNER -->
 	
 	<div class="banner">
 		<div class="mode-edition-top">
-			<img class="logo-top" src="./assets/icons/edition-white.svg" alt="edition">
+			<i class="fa-regular fa-pen-to-square fa-white"></i>
 			<div class="text-top">Mode édition</div>
 			<button type="submit" class="publish"> publiez les changements </button>
 		</div>
@@ -33,6 +35,8 @@
 	</nav>
 </header>
 <main >
+<!-- SECTION INTRODUCTION -->
+
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
@@ -44,15 +48,19 @@
 			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
 		</article>
 	</section>
+		
+<!-- SECTION GALLERIE & FILTRES -->
+
+
 	<section id="portfolio">
 		<div class="modifierProjectContainer">
 			<h2>Mes Projets</h2>
-		 <!-- <button id="btnModifier" class="btnModifier">modifier</button>-->
-		 <button id="modifierBtn" class="btnModifier">Modifier</button>
+			<div id="modifierBtn" class="btnModifier">	
+				<i class="fa-regular fa-pen-to-square">modifier</i>
+			</div>
 		</div>
 		
-		 <!-- <button id="btnModifier" class="btnModifier">modifier</button>-->
-		 <button id="modifierBtn" class="btnModifier">Modifier</button>
+		
 		 
 		<div id="filters" class="filters-style">
 		  <button id="filter-tous" class="filter-style-b">Tous</button>
@@ -62,6 +70,9 @@
 		</div>
 		<div class="gallery"></div>
 	  </section>
+
+<!-- SECTION CONTACT -->
+
 	<section id="contact">
 		<h2  id="contactMoov">Contact</h2>
 		<p>Vous avez un projet ? Discutons-en !</p>
@@ -76,6 +87,7 @@
 		</form>
 	</section>
 </main>
+<!-- FOOTER -->
 
 <footer>
 	<nav>
@@ -85,14 +97,14 @@
 	</nav>
 </footer>
 
+<!-- MODAL 1 -->
 
-
-
-<div id="myModal" class="modal">
+<div id="modal1" class="modal">
 	<div class="modal-content">
 	  <span class="close">&times;</span>
 	  <h3 class="galeriePhotoStyle">Galerie photo</h3>
-	  <div class="modalElement"></div>
+	  <div class="modalElement">
+	  </div>
 	  <div class="trait-container">
 		<div class="trait"></div>
 	  </div>
@@ -104,6 +116,25 @@
 	</div>
   </div>
 
+<!-- MODAL 2 -->
+
+  <div id="modal2" class="modal">
+	<div class="modal-content2">
+		<div class="arrowAndCross">
+		<i class="fa-solid fa-arrow-left"></i>
+		 <span class="close2">&times;</span> 
+	</div>
+		<div class="ajout-picture-title">Ajout photo</div>
+		<div class="ajout-picture ">
+			<div class="preview-image"></div>
+			<i class="fa-regular fa-image icon-picture"></i>
+			<label class="label-addPic" for="addPic">+ Ajouter photo</label>
+			<input type="file" class="input-addPic" id="addPic" name="addPic" accept="jpg/png">
+			<p>jpg, png : 4mo max</p>
+		</div>
+		
+		</div>
+	
 
 </body>
 <script src="script.js" defer></script>
