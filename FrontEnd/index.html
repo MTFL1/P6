@@ -55,8 +55,9 @@
 	<section id="portfolio">
 		<div class="modifierProjectContainer">
 			<h2>Mes Projets</h2>
-			<div id="modifierBtn" class="btnModifier">	
-				<i class="fa-regular fa-pen-to-square">modifier</i>
+			<div class="btnModifier">	
+				<i class="fa-regular fa-pen-to-square"></i>
+				<p class="">modifier</p>
 			</div>
 		</div>
 		
@@ -103,8 +104,7 @@
 	<div class="modal-content">
 	  <span class="close">&times;</span>
 	  <h3 class="galeriePhotoStyle">Galerie photo</h3>
-	  <div class="modalElement">
-	  </div>
+	  <div class="modalElement"></div>
 	  <div class="trait-container">
 		<div class="trait"></div>
 	  </div>
@@ -118,22 +118,42 @@
 
 <!-- MODAL 2 -->
 
-  <div id="modal2" class="modal">
+<div id="modal2" class="modal">
 	<div class="modal-content2">
-		<div class="arrowAndCross">
-		<i class="fa-solid fa-arrow-left"></i>
-		 <span class="close2">&times;</span> 
+	  <div class="arrowAndCross">
+		<i class="fa-solid fa-arrow-left arrowback"></i>
+		<span class="close2">&times;</span>
+	  </div>
+	  <div class="ajout-picture-title">Ajout photo</div>
+	  <div class="ajout-picture">
+		<div class="preview-image"><img alt="imguser" src="" class="import-pictures"></div>
+		<i class="fa-regular fa-image icon-picture"></i>
+		<label class="label-addPic" for="addPic">+ Ajouter photo</label>
+		<input type="file" class="input-addpic" id="addPic" name="addPic" accept="jpg/png">
+		<p>jpg, png : 4mo max</p>
+	  </div>
+	  <p id="msg-error"></p>
+
+	  <div class="form-container">
+		<form class="formmodal2" method="post">
+		  <label for="title">Titre</label>
+		  <input class="title" id="title" type="text">
+		  <label for="category">Catégorie</label>
+		  <select class="category" id="category" name="category">
+			<option value=""></option>
+			<option id="1" class="selectcategory">Objets</option>
+			<option id="2" class="selectcategory">Appartements</option>
+			<option id="3" class="selectcategory">Hotels & Restaurants</option>
+		  </select>
+		  <div class="trait-container">
+			<div class="trait"></div>
+		  </div>
+		  <button type="submit" class="valider">Valider</button>
+		</form>
+	  </div>
 	</div>
-		<div class="ajout-picture-title">Ajout photo</div>
-		<div class="ajout-picture ">
-			<div class="preview-image"></div>
-			<i class="fa-regular fa-image icon-picture"></i>
-			<label class="label-addPic" for="addPic">+ Ajouter photo</label>
-			<input type="file" class="input-addPic" id="addPic" name="addPic" accept="jpg/png">
-			<p>jpg, png : 4mo max</p>
-		</div>
-		
-		</div>
+  </div>
+  
 	
 
 </body>

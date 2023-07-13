@@ -24,6 +24,10 @@ function fetchWorksDisplayGallery(targetElement) {
         img.alt = 'image du projet';
         figure.appendChild(img);
 
+        const title = document.createElement('figcaption');
+        title.innerText = jsonWork.title; // Ajout du titre du projet
+        figure.appendChild(title);
+
         galleryElement.appendChild(figure);
       });
     });

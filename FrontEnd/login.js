@@ -53,7 +53,7 @@ async function FetchUserLogin() {
 // Mode edition si login 
 
 const log = document.querySelector("#log");
-const modifierBtn = document.querySelector("#modifierBtn");
+const modifierBtn = document.querySelector(".btnModifier");
 const banner = document.querySelector(".banner")
 
 function editMode() {

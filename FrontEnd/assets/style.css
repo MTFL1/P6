@@ -130,6 +130,7 @@ li:hover {
 	margin-right: 10px;
 	font-size: 20px;
 }
+
 .filters-style{
 	display: flex;
 	justify-content: center;
@@ -238,16 +239,14 @@ a {
 .erreur-msg {
 	margin-left: 40px;
 	color: rgb(212, 37, 37);
-	font-weight: 600;
+	font-weight: 600px;
 }
 
 .active{
 	display: block;
 
 }
-#modifierBtn{
-	display: none;
-	  }
+
 	  /* Modal 1 */
 .modal {
 	display: none;
@@ -284,7 +283,6 @@ a {
 .fa-trash-can{
 	width: 13px;
 	height: 13px;
-	display: block;
 	color: #ffffff;
 	background-color: #000000;
 	border: #000000 2px solid;
@@ -376,11 +374,20 @@ a {
 .modifierProjectContainer{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	width: 300px;
+	width: 400px;
 	height: 40px;
-	margin-left: 450px;
-	margin-bottom: 10px;
+	margin-left: 500px;
+	margin-bottom: 10px;	
+
+}
+.btnModifier{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin-left: 50px;
+	width: 90px;
+
 }
 
 /* Modal 2 */
@@ -396,7 +403,6 @@ a {
 	background: #fff;
 	border-radius: 10px;
 	position: relative;
-	border: #000000 2px solid;
 }
 .arrowAndCross{
 	width: 95%;
@@ -476,7 +482,7 @@ justify-content: space-between;
 	color: #919191;
 
 }
-.input-addPic{
+.input-addpic{
 	visibility: hidden;
 
 }
@@ -491,7 +497,68 @@ justify-content: space-between;
 	text-align: center;
 	margin-bottom: 19px;
 }
+.form-container {
+	display: flex;
+	flex-direction: column;
 
+}
+
+
+.form-container label {
+	color: black;
+	display: flex;
+	font-family: Work Sans;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
+	text-align: left;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.form-container input{
+	height: 51px;
+	width: 420px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	border:none;
+}
+
+.form-container select{
+	height: 51px;
+	width: 420px;
+	margin-bottom: 40px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	border:none;
+
+}
+.msg-error{
+	color:red;
+	margin-top: 20px;
+}
+
+.selectcategory{
+	font-family: 'Work Sans';
+	font-size: 10px;
+}
+.valider {
+	margin-left: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #A7A7A7;
+	color: white;
+	font-family: Syne;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	height: 36px;
+	width: 237px;
+	border-radius: 60px;
+	border: none;
+	margin-top: 32px;
+}
 /* Banner + publier les changements */
 .banner {
 	display: none;
@@ -541,7 +608,4 @@ justify-content: space-between;
 	cursor: pointer;
 	margin-top: 6px;
 
-}
-.modal-container2{
-	display: none;
 }
