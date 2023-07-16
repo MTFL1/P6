@@ -125,6 +125,7 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
 .banner .fa-pen-to-square{
 	color: #ffffff;
 	margin-right: 10px;
@@ -245,6 +246,25 @@ a {
 .active{
 	display: block;
 
+}
+/* Bouton Modifier*/
+
+.modifierProjectContainer{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	font-size: 16px;	
+
+}
+.btnModifier {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+	font-size: 16px;
+	margin-top: 7px;
 }
 
 	  /* Modal 1 */
@@ -370,30 +390,6 @@ a {
 	letter-spacing: 0em;
 	text-align: center;
 }
-.btnModifier{
-	display: flex;
-	flex-direction: row;
-	margin-left: 20px;
-	padding-top: 7px;
-
-}
-
-.modifierProjectContainer{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 100%;
-	height: 40px;
-	margin-bottom: 10px;
-	font-size: 16px;	
-}
-.textBtnModifier{
-	width: 70px;
-	padding-top: 7px;
-	padding-left: 7px;
-	font-size: 16px;
-}
-
 
 /* Modal 2 */
 .modal-content2 {
