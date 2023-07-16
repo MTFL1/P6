@@ -135,18 +135,22 @@ function addImage() {
 
 
     //Submit
+
+    // Fonction 
     Submit.addEventListener("click", (e) => {
-        e.preventDefault();
+        e.preventDefault(); //Empêche le comportement par défaut
         if (imgPreview && inputTitle && inputCategory) {
-            const formData = new FormData();
+            const formData = new FormData();// Créer un nouvel objet 
             console.log(imgPreview, inputTitle, inputCategory);
+            // Ajout des éléments à l'objet
             formData.append("image", imgPreview);
             formData.append("title", inputTitle);
             formData.append("category", inputCategory);
             console.log(formData);
         
-            fetchDataSubmit()
+            fetchDataSubmit();// Appel de la fonction d'envoi des données
 
+           // fonction d'envoi des données au serveur
             async function fetchDataSubmit() {
                 try {
                     // Fetch ajout des travaux
@@ -165,8 +169,11 @@ function addImage() {
                     //Clear les galleries
                     gallery.innerHTML = "";
                     fetchDataWorks();
+
                     previewImg.style.setProperty("visibility", "hidden");
                     imgContainer.style.setProperty("display", "flex");
+                    
+                    // Effacement du message d'erreur après 4 secondes
                     setTimeout(() => {
                         msgError.innerText = "";
                     }, 4000);
@@ -175,9 +182,10 @@ function addImage() {
                     console.log("Il y a eu une erreur sur le Fetch: " + error)
                 }
             }
-          } else {
+          } else {// message d'erreur si tous les champs ne sont pas remplies
             msgError.innerText = "Veuillez remplir tous les champs.";
             msgError.style.color = "red";
+           // Effacement du message d'erreur après 4 secondes
             setTimeout(() => {
                 msgError.innerText = "";
             }, 4000);
@@ -195,22 +203,6 @@ addImage();
 
 
 // Ecouteur d'évenements 
-
-/*A CORRIGER
-const arrowBack = document.querySelector('.arrowback');
-
-arrowBack.addEventListener('click', () => {
-  const modal2 = document.getElementById('modal2');
-  const modal1 = document.getElementById('modal1');
-  const modalElement = document.querySelector(".modalElement");
-
-  modal2.style.display = 'none';
-  modal1.style.display = "block";
-  modalElement.style.display = "block";
-
-});*/
-
-
 
   // Fermer la modal1 lors du clic sur la croix
   closeBtn.addEventListener("click", function() {
