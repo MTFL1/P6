@@ -363,32 +363,37 @@ a {
 	justify-content: center;
 	align-items: center;
 	color: #D65353;
-	font-family: Syne;
+	font-family: 'Syne';
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 17px;
 	letter-spacing: 0em;
 	text-align: center;
 }
+.btnModifier{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	padding-top: 7px;
+
+}
 
 .modifierProjectContainer{
 	display: flex;
 	flex-direction: row;
-	width: 400px;
-	height: 40px;
-	margin-left: 500px;
-	margin-bottom: 10px;	
-
-}
-.btnModifier{
-	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	margin-left: 50px;
-	width: 90px;
-
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	font-size: 16px;	
 }
+.textBtnModifier{
+	width: 70px;
+	padding-top: 7px;
+	padding-left: 7px;
+	font-size: 16px;
+}
+
 
 /* Modal 2 */
 .modal-content2 {
@@ -407,7 +412,7 @@ a {
 .arrowAndCross{
 	width: 95%;
 	display:flex;
-justify-content: space-between;
+	justify-content: space-between;
 
 }
 .fa-arrow-left{
@@ -568,6 +573,7 @@ justify-content: space-between;
 	height: 50px;
 	width: 1440px;
 	margin-left: -150px;
+
 }
 .publish {
 	display: flex;
@@ -580,6 +586,7 @@ justify-content: space-between;
 	margin-left: 20px;
 	margin-top: 6px;
 	border: none;
+
 }
 /* Mode edition top */
 .mode-edition-top {
@@ -587,6 +594,7 @@ justify-content: space-between;
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
+	width: 100%;
 }
 
 .text-top {

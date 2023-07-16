@@ -1,9 +1,8 @@
 /***************Modal 1 *************/
+
 // Fonction pour récupérer les données des travaux à partir d'une source externe (API)
 
-
 function fetchWorks() {
-    // Remplacez l'URL par l'URL réelle qui récupère les données des travaux via l'API
     return fetch("http://localhost:5678/api/works")
       .then(response => response.json())
       .then(data => {
@@ -16,8 +15,6 @@ function fetchWorks() {
   }
   
 
-
-  
   // Récupération des éléments de la page
   let modal1 = document.getElementById("modal1");
   let btn = document.querySelector(".btnModifier");
@@ -79,7 +76,7 @@ function fetchWorks() {
   
 /***************Modal 2 *************/
 
-//  Ajout Photo 2ème Modal 
+  // Récupération des éléments de la page
 
 const AddPicModal = document.querySelector(".input-addpic")
 const previewImg = document.querySelector(".import-pictures")
@@ -102,7 +99,7 @@ function addImage() {
       const maxSize = 4 * 1024 * 1024; // 4 Mo
   
       if (file.size > maxSize) {
-        // Afficher une erreur si la taille de l'image dépasse 4 Mo
+        // Affiche une erreur si la taille de l'image dépasse 4 Mo
         msgError.innerText = "La taille de l'image ne doit pas dépasser 4 Mo.";
         msgError.style.color = "red";
         return;
@@ -147,7 +144,7 @@ function addImage() {
             formData.append("title", inputTitle);
             formData.append("category", inputCategory);
             console.log(formData);
-
+        
             fetchDataSubmit()
 
             async function fetchDataSubmit() {
@@ -178,8 +175,7 @@ function addImage() {
                     console.log("Il y a eu une erreur sur le Fetch: " + error)
                 }
             }
-
-        } else {
+          } else {
             msgError.innerText = "Veuillez remplir tous les champs.";
             msgError.style.color = "red";
             setTimeout(() => {
@@ -187,6 +183,7 @@ function addImage() {
             }, 4000);
             console.log("Tous les champs ne sont pas remplis !");
         }
+       
     });
 }
 
@@ -198,6 +195,21 @@ addImage();
 
 
 // Ecouteur d'évenements 
+
+/*A CORRIGER
+const arrowBack = document.querySelector('.arrowback');
+
+arrowBack.addEventListener('click', () => {
+  const modal2 = document.getElementById('modal2');
+  const modal1 = document.getElementById('modal1');
+  const modalElement = document.querySelector(".modalElement");
+
+  modal2.style.display = 'none';
+  modal1.style.display = "block";
+  modalElement.style.display = "block";
+
+});*/
+
 
 
   // Fermer la modal1 lors du clic sur la croix
