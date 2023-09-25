@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./FrontEnd/assets/style.css">
 	
 </head>
 <body>
@@ -29,8 +29,8 @@
 		<ul>
 			<li><a class="no-underline">projets</a></li>
 				<li><a class="no-underline" href="#contactMoov" >contact</a></li>
-				<li><a id="log" class="no-underline" href="login.html">login</a> </li>
-				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+				<li><a id="log" class="no-underline" href="./Frontend/login.html">login</a> </li>
+				<li><img src="./FrontEnd/assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
 </header>
@@ -39,7 +39,7 @@
 
 	<section id="introduction">
 		<figure>
-			<img src="./assets/images/sophie-bluel.png" alt="">
+			<img src="./Frontend/assets/images/sophie-bluel.png" alt="">
 		</figure>
 		<article>
 			<h2>Designer d'espace</h2>
@@ -76,13 +76,14 @@
 		<p>Vous avez un projet ? Discutons-en !</p>
 		<form action="#" method="post">
 			<label for="name">Nom</label>
-			<input type="text" name="name" id="name">
+			<input type="text" name="name" id="name" autocomplete="name">
 			<label for="email">Email</label>
-			<input type="email" name="email" id="email">
+			<input type="email" name="email" id="email" autocomplete="email"> 
 			<label for="message">Message</label>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<textarea name="message" id="message" cols="30" rows="10" autocomplete="message"></textarea> 
 			<input type="submit" value="Envoyer">
 		</form>
+		
 	</section>
 </main>
 <!-- FOOTER -->
@@ -154,7 +155,7 @@
 	
 
 </body>
-<script src="script.js" defer></script>
-<script src="login.js" defer></script>
-<script src="modal.js" defer></script>
+<script src="./FrontEnd/script.js" defer></script>
+<script src="./FrontEnd/login.js" defer></script>
+<script src="./FrontEnd/modal.js" defer></script>
 </html>

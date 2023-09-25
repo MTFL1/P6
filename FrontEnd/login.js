@@ -27,7 +27,7 @@ async function FetchUserLogin() {
         });
 
         if (response.ok) {
-            window.location.href = "./index.html";
+            window.location.href = "/index.html";
              // Token d'autentification
             const dataUser = await response.json();
             // console.log(dataUser)
